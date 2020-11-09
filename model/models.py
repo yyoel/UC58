@@ -40,6 +40,11 @@ class HC_EmployeeCareer(Base):
     superior_emp_name = Column(String)
     gender = Column(String)
     education = Column(String)
+    education_institution_name_major = Column(String)
+    work_experience_1_company = Column(String)
+    work_experience_1_position = Column(String)
+    work_experience_1_start = Column(String)
+    work_experience_1_end = Column(String)
     resign_reason = Column(String)
     last_career_type = Column(String)
     directorate_catalog_code = Column(String)
@@ -63,7 +68,8 @@ class HC_EmployeeCareer(Base):
                  dt_resign, dt_birthday, company_id, company_name, directorate_code, directorate_name,
                  division_code, division_name, department_code, department_name, subdepartment_code, subdepartment_name,
                  section_code, section_name, job_title_code, job_title_name, position_code, position_name, job_grade, worklocation_code, worklocation_name,
-                 psikotest, corporate_email, mobile_phone_no, superior_emp_no, superior_emp_name, gender, education, resign_reason, last_career_type,
+                 psikotest, corporate_email, mobile_phone_no, superior_emp_no, superior_emp_name, gender, education, education_institution_name_major, 
+                 work_experience_1_company, work_experience_1_position, work_experience_1_start, work_experience_1_end, resign_reason, last_career_type,
                  directorate_catalog_code, directorate_catalog_name, division_catalog_code, division_catalog_name, department_catalog_code, department_catalog_name,
                  unit_catalog_code, unit_catalog_name, satuan_kerja_code, satuan_kerja_name, measure_id, measure_name, cost_allocation_code, cost_allocation_name,
                  region_allocation_code, region_allocation_name):
@@ -92,7 +98,7 @@ class HC_EmployeeCareer(Base):
                  self.position_code = position_code
                  self.position_name = position_name
                  self.job_grade = job_grade
-                 self. worklocation_code = worklocation_code
+                 self.worklocation_code = worklocation_code
                  self.worklocation_name = worklocation_name
                  self.psikotest = psikotest
                  self.corporate_email = corporate_email
@@ -101,6 +107,11 @@ class HC_EmployeeCareer(Base):
                  self.superior_emp_name = superior_emp_name
                  self.gender = gender
                  self.education = education
+                 self.education_institution_name_major = education_institution_name_major
+                 self.work_experience_1_company = work_experience_1_company
+                 self.work_experience_1_position = work_experience_1_position
+                 self.work_experience_1_start = work_experience_1_start
+                 self.work_experience_1_end = work_experience_1_end
                  self.resign_reason = resign_reason
                  self.last_career_type = last_career_type
                  self.directorate_catalog_code =directorate_catalog_code
