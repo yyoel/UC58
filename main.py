@@ -99,8 +99,8 @@ def main():
                     data["religion"],
                     data["marital_status"],
                     data["num_of_dependence"],
-                    data["PlaceOfBirth"],
-                    data["BranchRecruitment"],
+                    data["place_of_birth"],
+                    data["homebase_name"],
                 )
 
                 session.add(employee)
