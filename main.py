@@ -32,6 +32,11 @@ def main():
         data = json.loads(body, strict=False)
         print('After Decode', data)
 
+        # Create Table 
+        if HC_EmployeeCareer.__tablename__ not in engine.table_names():
+            Base.metadata.tables["UC58_HC_EmployeeCareer_2"].create(bind=engine)
+            print("Table created.")
+
         # Save Data
         save_to_db(data)
 
@@ -110,11 +115,6 @@ def main():
                 print("This data", data["emp_no"], "already exist")
         except JSONDecodeError:
             print('CONTAIN ERROR')
-
-    # Create Table 
-    if HC_EmployeeCareer.__tablename__ not in engine.table_names():
-        Base.metadata.tables["UC58_HC_EmployeeCareer_2"].create(bind=engine)
-        print("Table created.")
 
     # Consume Message
     channel.basic_qos(prefetch_count=1)
