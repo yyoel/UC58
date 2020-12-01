@@ -62,7 +62,11 @@ class HC_EmployeeCareer(Base):
     cost_allocation_code = Column(String)
     cost_allocation_name = Column(String)
     region_allocation_code = Column(String)
-    region_allocation_name = Column(String)
+    religion = Column(String)
+    marital_status = Column(String)
+    num_of_dependence = Column(Integer)
+    PlaceOfBirth = Column(String)
+    BranchRecruitment = Column(String)
 
     def __init__(self, emp_no, emp_name, emp_status, dt_join, dt_rehire_mitra,
                  dt_resign, dt_birthday, company_id, company_name, directorate_code, directorate_name,
@@ -72,7 +76,7 @@ class HC_EmployeeCareer(Base):
                  work_experience_1_company, work_experience_1_position, work_experience_1_start, work_experience_1_end, resign_reason, last_career_type,
                  directorate_catalog_code, directorate_catalog_name, division_catalog_code, division_catalog_name, department_catalog_code, department_catalog_name,
                  unit_catalog_code, unit_catalog_name, satuan_kerja_code, satuan_kerja_name, measure_id, measure_name, cost_allocation_code, cost_allocation_name,
-                 region_allocation_code, region_allocation_name):
+                 region_allocation_code, region_allocation_name, religion, marital_status, num_of_dependence, PlaceOfBirth, BranchRecruitment):
 
                  self.emp_no = emp_no
                  self.emp_name = emp_name
@@ -130,3 +134,8 @@ class HC_EmployeeCareer(Base):
                  self.cost_allocation_name = cost_allocation_name
                  self.region_allocation_code = region_allocation_code
                  self.region_allocation_name = region_allocation_name
+                 self.religion = religion
+                 self.marital_status = marital_status
+                 self.num_of_dependence = num_of_dependence
+                 self.PlaceOfBirth = PlaceOfBirth
+                 self.BranchRecruitment = BranchRecruitment

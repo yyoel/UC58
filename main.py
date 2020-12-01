@@ -95,7 +95,12 @@ def main():
                     data["cost_allocation_code"],
                     data["cost_allocation_name"],
                     data["region_allocation_code"],
-                    data["region_allocation_name"]
+                    data["region_allocation_name"],
+                    data["religion"],
+                    data["marital_status"],
+                    data["num_of_dependence"],
+                    data["PlaceOfBirth"],
+                    data["BranchRecruitment"],
                 )
 
                 session.add(employee)
