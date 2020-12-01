@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class HC_EmployeeCareer(Base):
-    __tablename__ = 'UC58_HC_EmployeeCareer'
+    __tablename__ = 'UC58_HC_EmployeeCareer_2'
 
     id = Column(Integer, primary_key=True)
     emp_no = Column(String)

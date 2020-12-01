@@ -113,7 +113,7 @@ def main():
 
     # Create Table 
     if HC_EmployeeCareer.__tablename__ not in engine.table_names():
-        Base.metadata.tables["UC58_HC_EmployeeCareer"].create(bind=engine)
+        Base.metadata.tables["UC58_HC_EmployeeCareer_2"].create(bind=engine)
         print("Table created.")
 
     # Consume Message
