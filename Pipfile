@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+sqlacodegen = "*"
+
+[packages]
+SQLAlchemy = "==1.3.19"
+pika = "==1.1.0"
+pyodbc = "==4.0.30"
+pydantic = "==1.7.3"
+
+[requires]
+python_version = "3.8"

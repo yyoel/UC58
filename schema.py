@@ -1,0 +1,71 @@
+from pydantic import BaseModel
+import datetime
+
+class EmployeeCareer(BaseModel):
+    emp_no : str = None
+    emp_name : str = None
+    emp_status : str = None
+    emp_prev_no : str = None
+    dt_join : datetime.date = None
+    dt_rehire_mitra : datetime.date = None
+    dt_resign : datetime.date = None
+    dt_birthday : datetime.date = None
+    company_id : str = None
+    company_name : str = None
+    directorate_code : str = None     
+    directorate_name : str = None     
+    division_code : str = None        
+    division_name : str = None        
+    department_code : str = None      
+    department_name : str = None      
+    subdepartment_code : str = None   
+    subdepartment_name : str = None   
+    section_code : str = None
+    section_name : str = None
+    job_title_code : str = None       
+    job_title_name : str = None       
+    position_code : str = None        
+    position_name : str = None        
+    job_grade : str = None
+    worklocation_code : str = None    
+    worklocation_name : str = None    
+    homebase_code : str = None    
+    homebase_name : str = None    
+    dt_last_career_eff : datetime.date = None   
+    religion : str = None    
+    marital_status : str = None    
+    num_of_dependance : str = None
+    place_of_birth : str = None
+    psikotest : str = None
+    corporate_email : str = None      
+    mobile_phone_no : str = None      
+    superior_emp_no : str = None      
+    superior_emp_name : str = None    
+    gender : str = None
+    education : str = None
+    education_institution_name_major : str = None
+    work_experience_1_company : str = None
+    work_experience_1_position : str = None
+    work_experience_1_start : str = None
+    resign_reason : str = None
+    work_experience_1_end : str = None        
+    last_career_type : str = None     
+    directorate_catalog_code : str = None
+    directorate_catalog_name : str = None
+    division_catalog_code : str = None    
+    division_catalog_name : str = None
+    department_catalog_code : str = None
+    department_catalog_name : str = None
+    unit_catalog_code : str = None    
+    unit_catalog_name : str = None    
+    satuan_kerja_code : str = None    
+    satuan_kerja_name : str = None    
+    measure_id : str = None
+    measure_name : str = None
+    cost_allocation_code : str = None 
+    cost_allocation_name : str = None 
+    region_allocation_code : str = None
+    region_allocation_name : str = None
+
+    class Config:
+        orm_mode = True
